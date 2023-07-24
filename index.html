@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        
+        <div class="logo-container">Palettable</div>
+        <div class="input-container">
+            <div class="left-input">
+                <div id="main-swatch"></div>
+                <button id="submit-button">Submit</button>
+            </div>
+            <div class="color-slider-container">
+                <div class="slide-container">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="red-slider">
+                </div>
+                <div class="slider-text">Red</div>
+                <input type="number" class="input-value black-border small-shadow" id="red-value" value="0" min="0" max="255">
+            </div>
+            <div class="color-slider-container">
+                <div class="slide-container">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="green-slider">
+                </div>
+                <div class="slider-text">Green</div>
+                <input type="number" class="input-value black-border small-shadow" id="green-value" value="0" min="0" max="255">
+            </div>
+            <div class="color-slider-container">
+                <div class="slide-container">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="blue-slider">
+                </div>
+                <div class="slider-text">Blue</div>
+                <input type="number" class="input-value black-border small-shadow" id="blue-value" value="0" min="0" max="255">
+            </div>
+            <div class="hex-input-container">
+                <div class="slider-text">HEX</div>
+                <div id="hex-guess-value" class="black-border small-shadow">#000000</div>
+            </div>
+        </div>
+        <div class="guess-container" id="guess-container">
+            <!-- <div class="guess-row">
+                <div class="guess-swatch-holder">
+                    <div class="guess-swatch"></div>
+                </div>
+                <div class="guess-number-holder">
+                    <div class="guess-number">10</div>
+                </div>
+                <div class="guess-number-holder">
+                    <div class="guess-number">10</div>
+                </div>
+                <div class="guess-number-holder">
+                    <div class="guess-number">10</div>
+                </div>
+                <div class="guess-hex-holder"></div>
+            </div> -->
+        </div>
+
+        <div id="win-screen" class="black-border big-shadow hide">
+            <div class="win-title">You Win</div>
+            <div id="win-number">It took you x guesses</div>
+            <div class="win-swatches"></div>
+            <div class="win-swatch-row">
+                <div class="win-color-container">
+                    <div class="win-color-text">The Color</div>
+                    <div class="win-color-swatch black-border small-shadow" id="win-main-color"></div>
+                    <div class="win-color-text" id="win-main-color-rgb">rgb(22,25,134)</div>
+                    <div class="win-color-text" id="win-main-color-hex">#124hab</div>
+                </div>
+                <div class="win-color-container">
+                    <div class="win-color-text">Your Color</div>
+                    <div class="win-color-swatch black-border small-shadow" id="win-guess-color"></div>
+                    <div class="win-color-text" id="win-guess-color-rgb">rgb(22,25,134)</div>
+                    <div class="win-color-text" id="win-guess-color-hex">#124hab</div>
+                </div>
+            </div>
+            <button id="retry-button">Go again?</button>
+        </div>
+        <div id="loss-screen" class="black-border big-shadow hide">
+            <div class="loss-title">You're out of guesses</div>
+            <div class="win-swatch-row">
+                <div class="win-color-container">
+                    <div class="win-color-text">The Color</div>
+                    <div class="win-color-swatch black-border small-shadow" id="loss-main-color"></div>
+                    <div class="win-color-text" id="loss-main-color-rgb">rgb(22,25,134)</div>
+                    <div class="win-color-text" id="loss-main-color-hex">#124hab</div>
+                </div>
+                <div class="win-color-container">
+                    <div class="win-color-text">Your Color</div>
+                    <div class="win-color-swatch black-border small-shadow" id="loss-guess-color"></div>
+                    <div class="win-color-text" id="loss-guess-color-rgb">rgb(22,25,134)</div>
+                    <div class="win-color-text" id="loss-guess-color-hex">#124hab</div>
+                </div>
+            </div>
+            <button id="retry-button2">Go again?</button>
+        </div>
+
+    </div>
+   
+
+    <script src="main.js" type=""></script>
+</body>
+</html>
